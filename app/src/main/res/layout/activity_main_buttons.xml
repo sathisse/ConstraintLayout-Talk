@@ -119,4 +119,39 @@
         app:layout_constraintTop_toBottomOf="@+id/instructions_lbl"
         android:text="@string/black_beans_instructions"/>
 
+    <CheckBox
+        android:id="@+id/made_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:text="@string/made_it"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes"
+        app:layout_constraintEnd_toStartOf="@+id/liked_it"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/liked_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/liked_it"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes"
+        app:layout_constraintEnd_toStartOf="@+id/notes"
+        app:layout_constraintStart_toEndOf="@+id/made_it"/>
+
+    <Button
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/liked_it"/>
+
 </android.support.constraint.ConstraintLayout>
