@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/black_beans_title"/>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/black_beans"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_previous"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/photo"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/photo"/>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"/>
+
+    <TextView
+        android:id="@+id/ingredients_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ingredients"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"/>
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_lbl"
+        android:text="@string/black_beans_ingredients"/>
+
+    <TextView
+        android:id="@+id/description_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/description"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/photo"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/description_lbl"
+        android:text="@string/black_beans_description"/>
+
+    <TextView
+        android:id="@+id/instructions_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/instructions"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients"/>
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions_lbl"
+        android:text="@string/black_beans_instructions"/>
+
+    <CheckBox
+        android:id="@+id/made_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:text="@string/made_it"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes"
+        app:layout_constraintEnd_toStartOf="@+id/liked_it"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/liked_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/liked_it"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes"
+        app:layout_constraintEnd_toStartOf="@+id/notes"
+        app:layout_constraintStart_toEndOf="@+id/made_it"/>
+
+    <Button
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/liked_it"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/andy"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginEnd="8dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/photo"-->
+        <!--app:layout_constraintDimensionRatio="h,1:2"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/photo"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/photo"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/photo"-->
+        <!--app:layout_constraintVertical_bias="0.5"-->
+        <!--app:srcCompat="@drawable/andy"/>-->
+
+</android.support.constraint.ConstraintLayout>
