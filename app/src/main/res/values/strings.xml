@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">ConstraintLayoutTalk</string>
+    <string name="app_name">Constraint Layout</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="description">Description</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="black_beans_title">Slow Cooker Black Beans</string>
+    <string name="black_beans_ingredients">
+        \u2022 2 cups black beans, dry\n\u2022 4\u00BD cups water or stock\n\u2022 1 cup onion, diced
+        \n\u2022 4 cloves garlic, minced\n\u2022 1 teaspoon salt</string>
+    <string name="black_beans_description">
+        This comfort food is a quick and easy recipe. It uses just a few ingredients.</string>
+    <string name="black_beans_instructions">
+        1. Pour the water or stock into the slow cooker.
+        \n2. Add the beans, onions, garlic, and salt.
+        \n3. Set the slow cooker to high and cook for 3 to 4\u00BD hours.
+        \n4. Garnish with cheese and/or avocado if desired..
+    </string>
+
+    <string name="made_it">Made it</string>
+    <string name="liked_it">Liked it</string>
+    <string name="notes">notes</string>
 </resources>
