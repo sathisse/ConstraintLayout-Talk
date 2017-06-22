@@ -14,13 +14,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:text="@string/black_beans_title"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="@string/black_beans_title"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/photo"
@@ -89,11 +89,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
+        android:text="@string/black_beans_ingredients"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ingredients_lbl"
-        android:text="@string/black_beans_ingredients"/>
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_lbl"/>
 
     <TextView
         android:id="@+id/description_lbl"
@@ -115,10 +115,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
+        android:text="@string/black_beans_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/description_lbl"
-        android:text="@string/black_beans_description"/>
+        app:layout_constraintTop_toBottomOf="@+id/description_lbl"/>
 
     <TextView
         android:id="@+id/instructions_lbl"
@@ -140,33 +140,31 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
+        android:text="@string/black_beans_instructions"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instructions_lbl"
-        android:text="@string/black_beans_instructions"/>
+        app:layout_constraintTop_toBottomOf="@+id/instructions_lbl"/>
 
     <CheckBox
         android:id="@+id/made_it"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
         android:text="@string/made_it"
         app:layout_constraintBaseline_toBaselineOf="@+id/notes"
         app:layout_constraintEnd_toStartOf="@+id/liked_it"
-        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <CheckBox
         android:id="@+id/liked_it"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="31dp"
+        android:layout_marginStart="32dp"
         android:text="@string/liked_it"
         app:layout_constraintBaseline_toBaselineOf="@+id/notes"
         app:layout_constraintEnd_toStartOf="@+id/notes"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/made_it"/>
 
     <Button
@@ -174,28 +172,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="31dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="32dp"
         android:text="@string/notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/liked_it"/>
+        app:layout_constraintEnd_toStartOf="@+id/instructions"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/liked_it"
+        tools:layout_editor_absoluteX="222dp"/>
 
     <!--<ImageView-->
-        <!--android:id="@+id/andy"-->
-        <!--android:layout_width="50dp"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_marginBottom="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:scaleType="fitXY"-->
-        <!--app:layout_constraintBottom_toBottomOf="@+id/photo"-->
-        <!--app:layout_constraintDimensionRatio="h,1:2"-->
-        <!--app:layout_constraintEnd_toEndOf="@+id/photo"-->
-        <!--app:layout_constraintStart_toStartOf="@+id/photo"-->
-        <!--app:layout_constraintTop_toTopOf="@+id/photo"-->
-        <!--app:layout_constraintVertical_bias="0.5"-->
-        <!--app:srcCompat="@drawable/andy"/>-->
+    <!--android:id="@+id/andy"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:scaleType="fitXY"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/photo"-->
+    <!--app:layout_constraintDimensionRatio="h,1:2"-->
+    <!--app:layout_constraintEnd_toEndOf="@+id/photo"-->
+    <!--app:layout_constraintStart_toStartOf="@+id/photo"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/photo"-->
+    <!--app:layout_constraintVertical_bias="0.5"-->
+    <!--app:srcCompat="@drawable/andy"/>-->
 
 </android.support.constraint.ConstraintLayout>
